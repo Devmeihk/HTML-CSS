@@ -23,19 +23,85 @@ body, html{
 }
 
 .pimg1{
-    background-image: url('../images/image3.jpg');
-    min-height: 100%;
+    background-image: url('../images/image4.jpg');
+    min-height: 2000px;
+    
+    /*
+        Pass på å ha en lang intro bilde for å skape følelsen/innlevelsen av at man dukker.
+    
+        Legg gjerne til flere bilder og elementer som gir følelsen av at man dykker lengre ned.
+    
+        legg til fisker osv.
+        ref: oneplus nord n10-5g
+    */
 }
 
 .pimg2{
-    background-image: url('../images/image2.jpg');
+    background-image: url('../images/image6.jpg');
     min-height: 500px;
+    background-size: contain;
 }
 
 .pimg3{
-    background-image: url('../images/image1.jpg');
-    min-height: 500px;
+    background-image: url('../images/image6.jpg');
+    min-height: 800px;
+    background-size: contain;
 }
+
+.fish1, .fish2, .fish3, .fish4, .fish5, .fish6{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+
+.fish1{
+    height: 80px;
+    width: 80px;
+    top: 1400px;
+    left: 600px;
+    opacity: 0.7;
+    transform: rotateY(180deg)
+}
+
+.fish2{
+    height: 70px;
+    width: 70px;
+    top: 1200px;
+    left: 500px;
+    opacity: 0.8;
+}
+
+.fish3{
+    height: 50px;
+    width: 50px;
+    top: 1250px;
+    left: 490px;
+    opacity: 0.8;
+}
+
+.fish4{
+    height: 40px;
+    width: 40px;
+    top: 1700px;
+    left: 950px;
+    opacity: 0.3;
+}
+.fish5{
+    height: 30px;
+    width: 30px;
+    top: 1440px;
+    left: 400px;
+    opacity: 0.6;
+}
+
+.fish6{
+    height: 70px;
+    width: 70px;
+    top: 1730px;
+    left: 920px;
+    opacity: 0.3;
+}
+
 
 .section{
     text-align: center;
@@ -54,7 +120,7 @@ body, html{
 
 .ptext{
     position: absolute;
-    top: 50%;
+    top: 20%;
     width: 100%;
     text-align: center;
     color: #000;
