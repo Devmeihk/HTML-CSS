@@ -6,6 +6,7 @@ body, html{
     font-weight: 400;
     line-height: 1.8em;
     color:#666;
+    
 }
 
 .pimg1, .pimg2, .pimg3{
@@ -44,8 +45,9 @@ body, html{
 
 .pimg3{
     background-image: url('../images/image6.jpg');
-    min-height: 800px;
+    min-height: 500px;
     background-size: contain;
+    border: 5px solid red;
 }
 
 .fish1, .fish2, .fish3, .fish4, .fish5, .fish6{
@@ -60,7 +62,7 @@ body, html{
     top: 1400px;
     left: 600px;
     opacity: 0.7;
-    transform: rotateY(180deg)
+    transform: rotateY(-0deg)
 }
 
 .fish2{
@@ -102,6 +104,258 @@ body, html{
     opacity: 0.3;
 }
 
+.easteregg1{
+    position: absolute;
+    top: 1246px;
+    left: 530px;
+    width: 30px;
+    opacity: 0.8;
+}
+
+.eastereggframe{
+    position: absolute;
+    top: 1246px;
+    left: 530px;
+    width: 30px;
+    animation: easteregg1 0.9s infinite;
+}
+
+.easteregg2{
+    position: absolute;
+    
+    left: 50%;
+    width: 20px;
+    opacity: 0.8;
+}
+
+.eastereggframe2{
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    animation: easteregg1 0.9s infinite;
+}
+
+
+
+/*
+
+
+.card{
+  position:absolute;
+  
+  padding:42px 32px;
+  
+  clip-path: circle(5% at 95% 11%);
+  transition: all ease-in-out .3s;
+  background-color:#ffffff;
+  
+  &__infoicon{
+    position:absolute;
+    
+    top:10px;
+    right:28px;
+    
+    font-size:1.4em;
+    color:#000000;
+    transition:ease-out .3s;
+  }
+  &__title{
+    margin:0;
+    
+    font-size: 3em;
+    line-height:1.8;
+  }
+  &__description{
+    margin:0;
+    
+    font-size: 1.1em;
+    line-height:1.6;
+  }
+  &__credits{
+    margin:0;
+    padding: 4px 0;
+    
+    font-size: 1.1em;
+  }
+  &__reference{
+    display:inline-block;
+    
+    border-bottom: 1px solid transparent;
+    color:#0099ff;
+    text-decoration:none;
+    transition: ease-in .3s;
+    &:hover{
+       border-bottom-color: #0099ff;
+    }
+  }
+  
+  &:hover, &:focus{
+    clip-path: circle(75%);
+    border-radius:20px;
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12),
+                0px 3px 18px rgba(0,0,0,0.08);
+    background:#ffffff;
+    
+    outline:none;
+    .card__infoicon{
+      opacity: 0;
+    }
+  }
+  &:focus{
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 
+                0px 3px 18px rgba(0,0,0,0.08), 
+                0px 0px 0px 4px rgba(0,0,0,0.2);
+  }
+}*/
+
+
+
+
+/****POPUP****/
+/*Denne popuppen animerer en framheving*/
+/* Tooltip container */
+.eggpopup {
+  display: inline-block;
+}
+
+/* Tooltip text */
+.eggpopup .eggpopuptext {
+    left: 50%;
+    visibility: hidden;
+    position: absolute;
+    width: 270px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .9s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.eggpopup:hover .eggpopuptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*******
+Denne popuppen animerer at den vokser. ulempen er at teksten er rar
+*******/
+.card{
+    display: inline-block;
+}
+
+.card .card__infoicon{
+    visibility: hidden;
+    left: 50%;
+    width: 10px;
+    height: 1px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.12), 0px 3px 18px rgba(0,0,0,0.08);
+    background: #ffffff;
+    position: absolute;
+    padding: 30px;
+    font-size: 1.4em;
+    color: #000000;
+    transition-property: width, height, transform;
+    transition:ease-out;
+    transition-duration: 1s, 1s, 0.7s;
+    transform: scale(0.3);
+}
+
+.card:hover .card__infoicon{
+    transform: scale(1);
+    visibility: visible;
+    width: 500px;
+    height: 200px;
+}
+
+
+/****POPUP ****/
+
+
+
+
+@keyframes easteregg1{     
+    50%{     transform: scale(1.2);
+        
+    }
+}
+
+/* Parent Container til alle the bubbler */
+.bubble-fill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+  /* reverse the order to allow hover   */
+    flex-direction: column-reverse;
+}
+
+/* Change the color on the selected  */
+/* Change the selected star and all siblings "before it" */
+.bubble-fill .bubble:hover,
+.bubble-fill .bubble:hover ~ .bubble{
+    background-color: red;
+    opacity: 0.9;
+}
+
+/* If using Adjacent sibling combinators */
+/* 
+.star-rating .star:hover+.star+.star,
+.star-rating .star:hover+.star+.star+.star,
+.star-rating .star:hover+.star+.star+.star+.star,
+.star-rating .star:hover+.star+.star+.star+star+.star{
+  background-color: red;
+} 
+*/
+
+.krakenlogo{
+    position: absolute;
+    margin: 0;
+    width: 96px;
+    left: 2%;
+    top: -2%;
+    opacity: 0.9;
+}
+
+.bubble{
+    display: inline-block;
+    width: 100px;
+    color: black;
+    height: 100%;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(255, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+    opacity: 0.3;
+    background-color: darkred;
+}
+
+.bubble:before{
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+
+.bubble:after{
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    filter: blur(1px);
+    z-index: 2;
+    transform: rotateZ(-30deg);
+    display: block;
+    background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%);
+}
 
 .section{
     text-align: center;
@@ -120,7 +374,7 @@ body, html{
 
 .ptext{
     position: absolute;
-    top: 20%;
+    top: 25%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -138,3 +392,4 @@ body, html{
 .ptext .border.trans{
     background-color: transparent;
 }
+

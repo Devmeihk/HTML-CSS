@@ -1,0 +1,55 @@
+<!--
+    [x] Lag en rød firkant. (Pen)
+    [] Flytt firkanten frem og tilbake på skjermen
+    [] Når firkanten har kommet tilbake, skal den snurre rundt.
+    [] Skift farge på firkanten mens alt dette skjer
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Oppgave 1</title>
+        <style type="text/css">
+            .box {
+                height: 100px;
+                width: 100px;
+                border-radius: 4px;
+                background-color: red;
+                position: relative;
+                left: 0px;
+                animation-name: animationNameCustomStuff;
+                animation-duration: 40s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                
+            }
+            @keyframes animationNameCustomStuff {
+                0% {
+                    left: 0px;
+                    background-color: red;
+                }
+                25% {
+                    left: 200px;
+                    background-color: blue;
+                }
+                50% {
+                    left: 0px;
+                    background-color: red;
+                }
+                75% {
+                    background-color: blue;
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(720deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        
+    </body>
+</html>
