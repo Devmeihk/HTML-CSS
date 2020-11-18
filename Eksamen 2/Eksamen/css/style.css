@@ -1,0 +1,999 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  overflow-x: hidden;
+}
+
+
+/*Bakgrunnsbiler*/
+.pimg1, .pimg2, .pimg3, .pimg12{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg4{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+}
+
+
+.pimg1{
+  background-image:url('../img/image1.jpg');
+  min-height:300%;
+
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:1000px;
+  animation: bg 15s infinite;
+  animation-timing-function: linear;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:1000px;
+  animation: bg 20s infinite;
+  animation-timing-function: linear;
+}
+
+.pimg4{
+  background-image:url('../img/image4.jpg');
+  min-height:2000px;
+}
+
+
+.blackbg{
+  position: relative;
+  background-image:url('../img/blackbg.png');
+  min-height:3000px;
+}
+
+.pimg12{
+  background-image:url('../img/image5.jpeg');
+  min-height:600px;
+  animation: bg 20s infinite;
+  animation-timing-function: linear;
+}
+
+/*Fog overlay */
+.fog {
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+
+.fog-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fog-img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+  z-index: 2;
+}
+
+.fog-img-first {
+  background: url("../img/fog-1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 60s linear infinite;
+}
+
+.fog-img-second {
+  background: url("../img/fog-2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 30s linear infinite;
+}
+
+/*Seksjon padding*/
+.section{
+  text-align:center;
+  padding: 100px 20px;
+ 
+}
+
+/*Skrift størrelser, padding, color*/
+h2{
+  padding: 20px 50px;
+  text-align:center;
+  color:#f3f3f3;
+  font-size:32px;
+  letter-spacing:7px;
+  text-transform:uppercase;
+}
+
+
+
+/*hover effect on all paragraphs*/
+.paragraph-container{
+    transition-duration: 3s;
+    cursor:default;
+    transition-timing-function: cubic-bezier(.07,.01,.02,.99)
+}
+
+.paragraph-container:hover{
+  transform: scale(1.1);
+
+}
+
+p{
+  margin: 20px 80px;
+  text-align:center;
+  color:#f3f3f3;
+  line-height: 27px;
+  font-size:20px;
+  letter-spacing:0.0625em;
+  
+}
+
+
+
+
+/*caracters on each section and HOVER ACTIVE*/
+.caracter-holder {
+    position: relative;
+    height: 500px;
+    top: -20px;
+    left: -100px;
+    width: 100%;
+    display: inline-block;
+
+}
+
+#trash {
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    left: 4.7%;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.07,.01,.02,.99)
+}
+#no-trash {
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    left: 0%;
+    top: 3px;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.07,.01,.02,.99);
+}
+
+.poseidon{
+    width: 550px;
+}
+
+.poseidon-trash{
+    width: 700px ;
+}
+
+
+.caracter-holder:active #no-trash {
+    opacity: 1;
+}
+.caracter-holder:active #trash {
+    opacity: 0;
+}
+.caracter-holder:hover #trash {
+    transform: scale(1.1);
+}
+.caracter-holder:hover #no-trash {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/*Seksjon fargelegging*/
+.section-light{
+  background-color:#11364b;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#11364b;
+  color:#ddd;
+}
+
+
+
+
+
+/*heading styling*/
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  font-size:48px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.scroll-heading-container{
+  position:absolute;
+  top:16%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:40px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border, #scroll{
+  background-color:#111;
+  color:#fff;
+  padding:20px 40px;
+}
+
+.ptext #mystery{
+  background-color:#d4d4d4;
+  color:black;
+  padding: 20px;
+  opacity: 0.5;
+  top: 0%;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+
+
+.text-box-container1{
+    position: relative;
+    display: inline-block;
+    left: -23%; 
+    top: -700px;
+    width: 20%;
+}
+
+
+.text-box-container2{
+    position: relative;
+    display: inline-block;
+    left: 28%;
+    top: -700px;
+    width: 30%;
+
+}
+
+.bigfont{
+    position: absolute;
+    font-size: 64px;
+    left: 37%;
+    padding: 10px 20px;
+    margin: 0;
+    color: #d3d3d3;
+}
+
+.number2{
+    left: 41.6%;
+}
+
+#tonn{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+
+/*section-heading animation*/
+.animasjontekst{
+  text-align: center;
+  position: relative;
+  top: 800px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.animasjontekst span{
+  text-transform: uppercase;
+  display: block;
+}
+.introduksjon{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  background:  #11364b;
+  position: relative;
+  padding-bottom: 5px;
+  animation: text 6s 5s 1;
+}
+.kohort11{
+  font-size: 20px;
+  color: #6ab04c;
+  padding: 8.5px;
+ }
+
+#plastic-heading{
+    animation: text 6s 15s 1;
+}
+
+#atlantis-heading{
+    animation: text 6s 20s 1;   
+}
+
+#kraken-heading{
+    animation: text 6s 30s 1;
+}
+
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+
+
+
+
+
+/*Elementer, fisk, oljetønner osv*/
+.oilcan{
+    position: absolute;
+    left:0px;
+    top: 50%;
+    width: 10%;
+    animation: move 20s  infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.7;
+ 
+}
+
+.oilcan2{
+    position: absolute;
+    left:0px;
+    top: 70%;
+    width: 15%;
+    animation: move 20s 5s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.8;
+ 
+}
+
+.platform{
+    position: relative;
+    top: 2750px ;
+    left: 8%;
+    width: 50%;
+    transform: rotate(45deg);
+    opacity: 0.1;
+    animation: platform 6s infinite;
+}
+
+
+ .fish1{
+    position: absolute;
+    animation: swimming 20s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+
+}
+
+.yellow1{
+  width: 10%;
+  top: 45%;
+  opacity: 0.9;  
+}
+
+.yellow2{
+    width: 5%;
+    top: 48%;
+    left: 40%;
+    opacity: 0.8;
+}
+
+.yellow3{
+    width: 4%;
+    top: 43%;
+    left: 55%;
+    opacity: 0.6;
+}
+
+
+
+.fish2{
+    position: absolute;
+    animation: swimming2 15s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+
+}
+
+.stripe1{
+    width: 11%;
+    top: 60%;
+    opacity: 0.8;  
+}
+
+
+.stripe2{
+    width: 4%;
+    top: 60%;
+    left: 60%;
+    opacity: 0.7;  
+}
+
+.stripe3{   
+    width: 4%;
+    top: 57%;
+    left: 70%;
+    opacity: 0.6; 
+}
+
+
+.fish3{
+    position: absolute;
+    width: 2%;
+    animation: swimming3 15s 2s  infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.2;
+
+}
+
+.fish4{
+    position: absolute;
+    max-width: 10%;
+    animation: swimming4 10s  infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.8;
+
+}
+
+.shark{
+   position: absolute;
+    top: 90%;
+    left: -220px;
+    max-width: 10%;
+    animation: shark 8s 5s 1;
+    animation-timing-function: cubic-bezier(.1,.84,1,.09);   
+ 
+}
+
+.plastic1{
+    position: absolute;
+    top: 70%;
+    max-width: 15%;
+    animation: plastic1 15s 4s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+.plastic2{
+    position: absolute;
+    width: 10%;
+    animation: plastic2 30s 3s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.6;
+}
+
+.bottle{
+    position: absolute;
+    top: 60%;
+    width: 5%;
+    animation: plasticbottle 8s 3s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.6;
+}
+
+.can{
+    position: absolute;
+    top: 80%;
+    width: 5%;
+    animation: plasticbottle 8s 3s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.6
+}
+
+.easter{
+   position: absolute;
+   top: 60%;
+   left: 49%;
+   width: 3%;
+   animation: easter 6s infinite;
+
+}
+
+.monster1{
+  position: absolute;
+  top:3%;
+  max-width: 20%;
+  animation: monster 15s infinite;
+  animation-timing-function: linear;
+  opacity: 0.7;
+}
+
+.monster2{
+    position: absolute;
+    max-width: 10%;
+    top: 5%;
+    left: 80%;
+    animation: monster 15s infinite;
+    animation-timing-function: linear;
+    opacity: 0.4;
+}
+
+.monster3{
+    position: absolute;
+    min-width:1%;
+    left: 70%;
+    top: 30%;
+    animation: monster 15s infinite;
+    animation-timing-function: linear;
+    opacity: 0.4;
+
+}
+section
+{
+height: 100vh;
+background: #000;
+width:100%;
+        
+ }    
+
+}
+/*animations*/
+
+
+/*fog animation*/
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+    
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+/*OilCans*/
+@keyframes move{   
+    0%{    left: -350px;   }  
+     
+    100%{  transform: rotate(360deg); left: 2200px; }
+}
+    
+/*fish1*/  
+ @keyframes swimming{
+     0%{   left: -200px;  }
+
+     100%{ left: 2300px; }
+ }
+
+/*fish2*/
+@keyframes swimming2{
+    0%{    left: 2200px; }
+    
+    100%{  left: -120px; }
+}
+
+/*fish3*/
+@keyframes swimming3{
+    0%{   top: 80%; left: -200px; }
+    
+    100%{ top: 50%; left: 2300px; }
+}
+ 
+/*fish4*/
+@keyframes swimming4{
+     0%{ top: 30%; left: -200px; }
+    
+    100%{   top: 70%; left: 2300px; }
+}
+
+/*plastic-bag1*/
+@keyframes plastic1{
+     0%{  left: 2200px; }  
+     
+    100%{  transform: rotate(360deg); left: -200px;  }
+}
+
+/*plastic-bag2*/
+@keyframes plastic2{
+      0%{   left: 2200px;  top: 80%; }  
+     
+    100%{   transform: rotate(360deg); top: 50%; left: -200px;}
+}
+
+/*bottle, can*/
+@keyframes plasticbottle{
+      0%{  left: 2200px; }  
+     
+    100%{  transform: rotate(360deg); left: -200px;  }
+}
+
+/*easterEgg*/
+@keyframes easter{     
+     50%{     transform: scale(1.5);
+        
+    }
+
+}
+
+/*Shark*/
+@keyframes shark{
+   
+    0%{     opacity: 0.3;} 5%{     opacity: 0.3;   }
+    
+    10%{    opacity: 0.3;   }
+    
+    30%{    transform: rotateY(90deg);    opacity: 0.7 }
+    
+    50%{    transform: scale(15);   opacity: 1; }
+ 
+    60%{   opacity: 0.90; }
+    
+    65%{   opacity: 0.85; }
+    
+    70%{   opacity: 0.80; }
+    
+    75%{   opacity: 0.75; }
+    
+    80%{   opacity: 0.70; }
+    
+    90%{   opacity: 0.65; }
+    
+    95%{   opacity: 0.55; }
+    
+    100%{ left: 50%; opacity: 0.4;}
+}
+  
+/*background scaling*/
+@keyframes bg{
+    50%{   transform: scale(0.89); }
+}
+
+/*mystery monsters*/
+@keyframes monster{
+    50%{   transform: scale(0.5); }
+}
+    
+/*video*/
+.container{
+    position: relative;
+    width: 60%;
+    top: 290px;
+    margin: auto;
+}
+
+.video{
+    width: 100%;
+    display: block;
+    margin: 0;
+ 
+}
+
+.video:focus{
+    outline: none;
+}
+
+/*Section-photo-gallery: Ocean, Atlantis, Kraken */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
+.ocean {
+    background: url(../img/ocean3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: contain;
+    
+    animation: slide-ocean 20s infinite;
+    
+}
+
+
+@keyframes slide-ocean {
+    0% {
+        background: url(../img/ocean3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    12% {
+        background: url(../img/ocean2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    20% {
+        background: url(../img/ocean4.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+      
+    33% {
+        background: url(../img/animal1.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    } 
+    
+    40% {
+        background: url(../img/animal2.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    50% {
+        background: url(../img/animal5.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+    
+     61% {
+        background: url(../img/ocean5.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+    
+    
+    74% {
+        background: url(../img/animal3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+   
+    84% {
+        background: url(../img/animal4-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+    
+    
+    100% {
+        background: url(../img/krakenReal.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+}
+
+.atlantis {
+    background: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    animation: slide-atlantis 10s infinite;
+    transform: scale(1)
+}
+
+
+@keyframes slide-atlantis {
+    0% {
+        background: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    33% {
+        background: url(../img/2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    50% {
+        background: url(../img/3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    80% {
+        background: url(../img/4.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    100% {
+        background: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+
+
+.octopus {
+    background: url(../img/octopus1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: contain;
+    
+    animation: slide-kraken 6s infinite;
+    
+}
+
+
+@keyframes slide-kraken {
+    0% {
+        background: url(../img/octopus1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    33% {
+        background: url(../img/kraken.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    66% {
+        background: url(../img/kraken-after.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    100% {
+        background: url(../img/octopus1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+}
+/*animation for mystery tekst/smoke effekt*/
+
+section
+{
+height: 100vh;
+background: #000;
+width:100%;
+        
+    }
+
+
+    video{
+
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+        
+        
+    }
+    h1{
+        
+        margin:0;
+        padding: 0;
+        position: absolute;
+        top:20%;
+        transform:translateY(-60%);
+        width:100%;
+        text-align:center;
+        color:#ddd;
+        font-size:5em;
+        font-family::"Lato", sans-serif;
+        letter-spacing: 0.2em;
+            
+
+    }
+    
+    h1 span{
+        
+        opacity:0;
+        display: inline-block;
+        animation: animate 1s linear forwards;
+ 
+    }
+    @keyframes animate
+    {
+    
+        0%{
+            opacity: 0;
+            transform: rotateY(90deg);
+            filter:blur(10px);
+            
+        }
+        100%{
+            opacity:1;
+            transform: rotateY(0deg);
+            filter:blur(0);
+        }
+        
+    
+    }    
+    h1 span:nth-child(1){
+        animation-delay: 1s; 
+    } 
+     h1 span:nth-child(2){
+        animation-delay: 2s; 
+    }
+      h1 span:nth-child(3){
+        animation-delay: 2.5s; 
+    }
+      h1 span:nth-child(4){
+        animation-delay: 3.5s; 
+    }
+      h1 span:nth-child(5){
+        animation-delay: 4.5s; 
+    }
+      h1 span:nth-child(6){
+        animation-delay:5s;
+    }
+
+      h1 span:nth-child(7){
+        animation-delay:5.5s;
+    }
+/*END*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
