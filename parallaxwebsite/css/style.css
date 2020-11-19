@@ -47,7 +47,6 @@ body, html{
     background-image: url('../images/image6.jpg');
     min-height: 500px;
     background-size: contain;
-    border: 5px solid red;
 }
 
 .fish1, .fish2, .fish3, .fish4, .fish5, .fish6{
@@ -108,21 +107,20 @@ body, html{
     position: absolute;
     top: 1246px;
     left: 530px;
-    width: 30px;
+    width: 20px;
     opacity: 0.8;
 }
 
-.eastereggframe{
+.eastereggframe1{
     position: absolute;
     top: 1246px;
     left: 530px;
-    width: 30px;
-    animation: easteregg1 0.9s infinite;
+    width: 20px;
+    animation: eastereggaction 0.9s infinite;
 }
 
 .easteregg2{
     position: absolute;
-    
     left: 50%;
     width: 20px;
     opacity: 0.8;
@@ -132,11 +130,11 @@ body, html{
     position: absolute;
     left: 50%;
     width: 20px;
-    animation: easteregg1 0.9s infinite;
+    animation: eastereggaction 0.9s infinite;
 }
 
 
-
+/*card*/
 /*
 
 
@@ -208,14 +206,43 @@ body, html{
   }
 }*/
 
+.eggpopup1 {
+    display: inline-block;
+    cursor: zoom-in;
+}
 
+/* Tooltip text */
+.eggpopup1 .eggpopuptext1 {
+    top: 1246px;
+    left: 530px;
+    visibility: hidden;
+    position: absolute;
+    width: 270px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .9s;
+    transition-delay: 1s;
+    
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.eggpopup1:hover .eggpopuptext1 {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 /****POPUP****/
 /*Denne popuppen animerer en framheving*/
 /* Tooltip container */
 .eggpopup {
-  display: inline-block;
+    display: inline-block;
+    cursor: zoom-in;
 }
 
 /* Tooltip text */
@@ -224,14 +251,16 @@ body, html{
     visibility: hidden;
     position: absolute;
     width: 270px;
-    background-color: white;
-    color: black;
+    background-color: cadetblue;
+    color: white;
     text-align: center;
     padding: 20px;
     border-radius: 6px;
     z-index: 1;
     opacity: 0;
     transition: opacity .9s;
+    transition-delay: 1s;
+    
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -247,6 +276,7 @@ Denne popuppen animerer at den vokser. ulempen er at teksten er rar
 *******/
 .card{
     display: inline-block;
+    cursor: zoom-in;
 }
 
 .card .card__infoicon{
@@ -262,9 +292,10 @@ Denne popuppen animerer at den vokser. ulempen er at teksten er rar
     font-size: 1.4em;
     color: #000000;
     transition-property: width, height, transform;
-    transition:ease-out;
+    transition: ease-out;
     transition-duration: 1s, 1s, 0.7s;
     transform: scale(0.3);
+    
 }
 
 .card:hover .card__infoicon{
@@ -272,6 +303,7 @@ Denne popuppen animerer at den vokser. ulempen er at teksten er rar
     visibility: visible;
     width: 500px;
     height: 200px;
+    transition-delay: 1s;
 }
 
 
@@ -280,7 +312,7 @@ Denne popuppen animerer at den vokser. ulempen er at teksten er rar
 
 
 
-@keyframes easteregg1{     
+@keyframes eastereggaction{     
     50%{     transform: scale(1.2);
         
     }
