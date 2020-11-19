@@ -1,0 +1,1415 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  overflow-x: hidden;
+}
+
+
+/*Bakgrunnsbiler*/
+.pimg1, .pimg2, .pimg3, .pimg12{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg4{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+}
+
+
+.pimg1{
+  background-image:url('../img/image1.jpg');
+  min-height:300%;
+
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:700px;
+    margin: 0;
+    padding: 0;
+/*
+  animation: bg 15s infinite;
+  animation-timing-function: linear;
+*/
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:700px;
+/*
+  animation: bg 20s infinite;
+  animation-timing-function: linear;
+*/
+}
+
+.pimg4{
+  background-image:url('../img/image4.jpg');
+  min-height:2000px;
+}
+
+
+.blackbg{
+  position: relative;
+  background-image:url('../img/blackbg.png');
+  min-height:3000px;
+}
+
+.pimg12{
+  background-image:url('../img/image5.jpeg');
+  min-height:700px;
+/*
+  animation: bg 20s infinite;
+  animation-timing-function: linear;
+*/
+}
+
+/*Fog overlay */
+.fog {
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+
+.fog-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fog-img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+  z-index: 2;
+}
+
+.fog-img-first {
+  background: url("../img/fog-1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 60s linear infinite;
+}
+
+.fog-img-second {
+  background: url("../img/fog-2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 30s linear infinite;
+}
+
+/*DETTE*/
+/*Seksjon padding*/
+.section{
+    text-align: center;
+    padding: 100px 20px;
+    /*height: 100vh;
+    background: #000;
+    width:  100%;*/
+}
+/*DOBBELSJEKK DETTE*********************************************************/
+
+/*Seksjon fargelegging*/
+.section-light{
+  background-color:#11364b;
+  color:#666;
+}
+
+.section-dark{
+    background-color:#11364b;
+    color:#ddd;
+}
+
+/*Skrift størrelser, padding, color*/
+h2{
+    padding: 20px 50px;
+    text-align:center;
+    color:#f3f3f3;
+    font-size:32px;
+    letter-spacing:7px;
+    text-transform:uppercase;
+}
+
+/*hover effect on all paragraphs*/
+.paragraph-container{
+    top: -20px;
+    transition-duration: 3s;
+    cursor:default;
+    transition-timing-function: cubic-bezier(.07,.01,.02,.99)
+}
+
+.paragraph-container:hover{
+    transform: scale(1.1);
+
+}
+
+p{
+    margin: 20px 100px;
+    text-align: center;
+    color: #f3f3f3;
+    line-height: 40px;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+  
+}
+
+/*Khiem START*/
+/*hover effect on all paragraphs*/
+.caracter-holder {
+    position: relative;
+    height: 40%;
+    top: -30%;
+    left: 30%;
+    width: 33%;
+    display: inline-block;
+}
+
+#trash {
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    left: -18%;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.07,.01,.02,.99);
+}
+#no-trash {
+    position: absolute;
+    width: 100%;
+    margin: 0px auto;
+    left: 20%;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.07,.01,.02,.99);
+}
+
+.poseidon{
+    width: 630px;
+}
+
+.poseidon-trash{
+    width: 850px ;
+}
+
+
+.caracter-holder:active #no-trash {
+    opacity: 1;
+}
+.caracter-holder:active #trash {
+    opacity: 0;
+}
+.caracter-holder:hover #trash {
+    transform: scale(1.1);
+}
+.caracter-holder:hover #no-trash {
+    transform: scale(1.1);
+}
+
+.atlantis-text{
+    position: relative;
+    left: 50%;
+    top: -15%;
+    transform: translate(-50%, -50%);
+}
+/*Ender av Khiem END*/
+
+/*heading styling*/
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  font-size:48px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.scroll-heading-container{
+  position:absolute;
+  top:16%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:40px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border, #scroll{
+  background-color:#111;
+  color:#fff;
+  padding:20px 40px;
+}
+
+.ptext #mystery{
+  background-color:#d4d4d4;
+  color:black;
+  padding: 20px;
+  opacity: 0.5;
+  top: 0%;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+
+
+.text-box-container1{
+    position: relative;
+    display: inline-block;
+    left: -30.5%; 
+    top: -34.7%;
+    width: 20%;
+}
+
+
+.text-box-container2{
+    position: relative;
+    display: inline-block;
+    left: 26.5%;
+    top: -34.7%;
+    width: 20%;
+}
+
+.bigfont{
+    position: absolute;
+    font-size: 64px;
+    left: 34%;
+    padding: 10px 20px;
+    margin: 0;
+    color: #A9A9A9;
+}
+
+.number80{
+    left: 30.9%;
+}
+
+#tonn{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/*section-heading animation*/
+.animasjontekst{
+  text-align: center;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.animasjontekst span{
+  text-transform: uppercase;
+  display: block;
+}
+.introduksjon{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  background:  #11364b;
+  position: relative;
+  padding-bottom: 5px;
+  animation: text 6s 5s 1;
+}
+.kohort11{
+  font-size: 20px;
+  color: #6ab04c;
+  padding: 8.5px;
+ }
+
+
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+
+
+
+
+
+/*Elementer, fisk, oljetønner osv*/
+.oilcan{
+    position: absolute;
+    left:0px;
+    top: 50%;
+    width: 10%;
+    animation: move 20s  infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.7;
+ 
+}
+
+.oilcan2{
+    position: absolute;
+    left:0px;
+    top: 70%;
+    width: 15%;
+    animation: move 20s 5s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.8;
+ 
+}
+
+.platform{
+    position: relative;
+    top: 2750px ;
+    left: 8%;
+    width: 50%;
+    transform: rotate(45deg);
+    opacity: 0.1;
+    animation: platform 6s infinite;
+}
+
+
+ .fish1{
+    position: absolute;
+    animation: swimming 20s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+
+}
+
+.yellow1{
+  width: 10%;
+  top: 45%;
+  opacity: 0.9;  
+}
+
+.yellow2{
+    width: 5%;
+    top: 48%;
+    left: 40%;
+    opacity: 0.8;
+}
+
+.yellow3{
+    width: 4%;
+    top: 43%;
+    left: 55%;
+    opacity: 0.6;
+}
+
+
+
+.fish2{
+    position: absolute;
+    animation: swimming2 15s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+
+}
+
+.stripe1{
+    width: 11%;
+    top: 60%;
+    opacity: 0.8;  
+}
+
+
+.stripe2{
+    width: 4%;
+    top: 60%;
+    left: 60%;
+    opacity: 0.7;  
+}
+
+.stripe3{   
+    width: 4%;
+    top: 57%;
+    left: 70%;
+    opacity: 0.6; 
+}
+
+
+.fish3{
+    position: absolute;
+    width: 2%;
+    animation: swimming3 15s 2s  infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.2;
+
+}
+
+.fish4{
+    position: absolute;
+    max-width: 10%;
+    animation: swimming4 10s  infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.8;
+
+}
+
+.shark{
+    border: 3px solid red;
+    position: absolute;
+    top: 90%;
+    left: -20px;
+    max-width: 10%;
+    animation: shark 8s 5s 1;
+    animation-timing-function: cubic-bezier(.1,.84,1,.09);   
+}
+
+.plastic1{
+    position: absolute;
+    top: 70%;
+    max-width: 15%;
+    animation: plastic1 15s 4s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+.plastic2{
+    position: absolute;
+    width: 10%;
+    animation: plastic2 30s 3s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.6;
+}
+
+.bottle{
+    position: absolute;
+    top: 60%;
+    width: 5%;
+    animation: plasticbottle 8s 3s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.6;
+}
+
+.can{
+    position: absolute;
+    top: 80%;
+    width: 5%;
+    animation: plasticbottle 8s 3s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    opacity: 0.6
+}
+
+/*Khiem START*/
+.easteregg1{
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    width: 30px;
+    opacity: 0.4;
+}
+
+.eastereggframe1{
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    width: 31px;
+    animation: frameanimation 0.9s infinite;
+    opacity: 0.6;
+}
+
+.easteregg2{
+    position: absolute;
+    left: 28.5%;
+    top: 69.8%;
+    width: 40px;
+    opacity: 0.5;
+}
+
+.eastereggframe2{
+    position: absolute;
+    left: 28.5%;
+    top: 69.8%;
+    width: 41px;
+    animation: frameanimation 0.9s infinite;
+    opacity: 0.4;
+}
+
+.easteregg3{
+    position: absolute;
+    left: 54.5%;
+    top: 16%;
+    width: 30px;
+    opacity: 0.;
+}
+
+.eastereggframe3{
+    position: absolute;
+    left: 54.5%;
+    top: 16%;
+    width: 31px;
+    animation: frameanimation 0.9s infinite;
+    opacity: 0.5;
+}
+
+.easteregg4{
+    position: absolute;
+    left: 44%;
+    top: 7%;
+    width: 24px;
+    opacity: 0.3;
+}
+
+.eastereggframe4{
+    position: absolute;
+    left: 44%;
+    top: 7%;
+    width: 24px;
+    animation: frameanimation 0.9s infinite;
+    opacity: 0.2;
+}
+
+@keyframes frameanimation{     
+    50%{     transform: scale(1.2);
+        
+    }
+}
+
+/****POPUP****/
+/*Denne popuppen animerer en framheving*/
+/* Tooltip container */
+.eggpopup1 {
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+/* Tooltip text */
+.eggpopup1 .eggpopuptext1 {
+    top: 60%;
+    left: 49%;
+    visibility: hidden;
+    position: absolute;
+    width: 270px;
+    background-color: #11364b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .9s;
+    transition-delay: 0.5s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.eggpopup1:hover .eggpopuptext1 {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.eggpopup2 {
+  display: inline-block;
+    cursor: zoom-in;
+}
+
+/* Tooltip text */
+.eggpopup2 .eggpopuptext2 {
+    left: 28.5%;
+    top: 69.8%;
+    visibility: hidden;
+    position: absolute;
+    width: 270px;
+    background-color: #11364b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .9s;
+    transition-delay: 0.5s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.eggpopup2:hover .eggpopuptext2 {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.eggpopup3 {
+  display: inline-block;
+    cursor: zoom-in;
+}
+
+/* Tooltip text */
+.eggpopup3 .eggpopuptext3 {
+    left: 45%;
+    top: 20%;
+    visibility: hidden;
+    position: absolute;
+    width: 270px;
+    background-color: #fff;
+    color: #11364b;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .9s;
+    transition-delay: 0.5s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.eggpopup3:hover .eggpopuptext3 {
+    visibility: visible;
+    opacity: 0.85;
+}
+
+.eggpopup4 {
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+/* Tooltip text */
+.eggpopup4 .eggpopuptext4 {
+    position: absolute;
+    left: 44%;
+    top: -20%;
+    font-size: 19px;
+    letter-spacing: 1.2px;
+    visibility: hidden;
+    width: 445px;
+    background-color: #fff;
+    color: #11364b;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .9s, ease-out 2s;
+    transition-delay: 0.5s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.eggpopup4:hover .eggpopuptext4 {
+    visibility: visible;
+    opacity: 1;
+}
+/*Khiem END*/
+
+
+.monster1{
+  position: absolute;
+  top:3%;
+  max-width: 20%;
+  animation: monster 15s infinite;
+  animation-timing-function: linear;
+  opacity: 0.7;
+}
+
+.monster2{
+    position: absolute;
+    max-width: 10%;
+    top: 5%;
+    left: 83%;
+    animation: monster 15s infinite;
+    animation-timing-function: linear;
+    opacity: 0.4;
+}
+
+.monster3{
+    position: absolute;
+    min-width:1%;
+    left: 83%;
+    top: 20%;
+    animation: monster 15s infinite;
+    animation-timing-function: linear;
+    opacity: 0.4;
+
+}
+/*animations*/
+
+
+/*fog animation*/
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+    
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+/*OilCans*/
+@keyframes move{   
+    0%{    left: -350px;   }  
+     
+    100%{  transform: rotate(360deg); left: 2200px; }
+}
+    
+/*fish1*/  
+ @keyframes swimming{
+     0%{   left: -200px;  }
+
+     100%{ left: 2300px; }
+ }
+
+/*fish2*/
+@keyframes swimming2{
+    0%{    left: 2200px; }
+    
+    100%{  left: -120px; }
+}
+
+/*fish3*/
+@keyframes swimming3{
+    0%{   top: 80%; left: -200px; }
+    
+    100%{ top: 50%; left: 2300px; }
+}
+ 
+/*fish4*/
+@keyframes swimming4{
+     0%{ top: 30%; left: -200px; }
+    
+    100%{   top: 70%; left: 2300px; }
+}
+
+/*plastic-bag1*/
+@keyframes plastic1{
+     0%{  left: 2200px; }  
+     
+    100%{  transform: rotate(360deg); left: -200px;  }
+}
+
+/*plastic-bag2*/
+@keyframes plastic2{
+      0%{   left: 2200px;  top: 80%; }  
+     
+    100%{   transform: rotate(360deg); top: 50%; left: -200px;}
+}
+
+/*bottle, can*/
+@keyframes plasticbottle{
+      0%{  left: 2200px; }  
+     
+    100%{  transform: rotate(360deg); left: -200px;  }
+}
+
+
+}
+
+/*Shark*/
+@keyframes shark{
+   
+    0%{     opacity: 0.3;   } 5%{     opacity: 0.3;   }
+    
+    10%{    opacity: 0.3;   }
+    
+    30%{    transform: rotateY(90deg);    opacity: 0.7 }
+    
+    50%{    transform: scale(15);   opacity: 1; }
+ 
+    60%{   opacity: 0.90; }
+    
+    65%{   opacity: 0.85; }
+    
+    70%{   opacity: 0.80; }
+    
+    75%{   opacity: 0.75; }
+    
+    80%{   opacity: 0.70; }
+    
+    90%{   opacity: 0.65; }
+    
+    95%{   opacity: 0.55; }
+    
+    100%{ left: 50%; opacity: 0.4;}
+}
+  
+/*background scaling*/
+@keyframes bg{
+    50%{   transform: scale(0.89); }
+}
+
+/*mystery monsters*/
+@keyframes monster{
+    50%{   transform: scale(0.5); }
+}
+    
+/*video*/
+.video-container{
+    position: relative;
+    width: 70%;
+    top: 100px;
+    margin: auto;
+}
+
+.video{
+    width: 100%;
+    display: block;
+    margin: 0;
+ 
+}
+
+.video:focus{
+    outline: none;
+}
+
+/*Section-photo-gallery: Ocean, Atlantis, Kraken */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
+.ocean {
+    background: url(../img/ocean3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: contain;
+    
+    animation: slide-ocean 30s infinite;
+    
+}
+
+
+@keyframes slide-ocean {
+    0% {
+        background: url(../img/ocean3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    12% {
+        background: url(../img/ocean2.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    20% {
+        background: url(../img/ocean4.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+      
+    33% {
+        background: url(../img/animal1.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    } 
+    
+    40% {
+        background: url(../img/animal2.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    50% {
+        background: url(../img/animal5.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+    
+     61% {
+        background: url(../img/ocean5.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+    
+    
+    74% {
+        background: url(../img/animal3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+   
+    84% {
+        background: url(../img/animal4-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+    
+    
+    100% {
+        background: url(../img/ocean3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;   
+    }
+}
+
+/*Khiem START Atlantis + Kraken*/
+.slidershow{
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.middle{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.atlantisslides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.atlantisslide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.atlantisslide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+
+.k-slidershow{
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.k-middle{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.krakenslides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.krakenslide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.krakenslide img{
+    width: 100%;
+    height: 100%;
+}
+
+#k1:checked ~ .s1{
+    margin-left: 0;
+}
+#k2:checked ~ .s1{
+    margin-left: -20%;
+}
+#k3:checked ~ .s1{
+    margin-left: -40%;
+}
+#k4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+.kraken-text{
+    position: relative;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+/*Khiem END Atlantis + Kraken*/
+
+
+
+/*nytt*/
+#grab-bag{
+    display:none;
+}
+#grab-bag:checked+button {
+    display:none;
+}
+            
+#grab-bottle{
+    display:none;
+}
+#grab-bottle:checked+button {
+    display:none;
+}
+
+#grab-can{
+    display:none;
+}
+
+#grab-can:checked+button {
+    display: none;
+}
+            
+#grab-oil{
+    display:none;
+}
+#grab-oil:checked+button {
+    display:none;
+}
+            
+#grab-plastics1{
+    display:none;
+}
+#grab-plastics1:checked+button {
+    display:none;
+}
+            
+#grab-plastics2{
+    display:none;
+}
+#grab-plastics2:checked+button {
+    display:none;
+}
+            
+#grab-plastics3{
+    display:none;
+}
+#grab-plastics3:checked+button {
+    display:none;
+}
+            
+#grab-plastics4{
+    display:none;
+}
+            
+#grab-plastics4:checked+button {
+    display:none;
+}
+
+#grab-boat{
+    display:none;
+}
+            
+#grab-boat:checked+button {
+    display:none;
+}
+  
+
+                      
+            
+#bag{
+ animation: sveving 15s infinite;
+ animation-timing-function: linear;
+ transform: rotate(10deg);
+ width: 20%;
+ left: 70%;
+ top: 60%;
+ opacity: 0.7;
+    
+}
+            
+
+            
+#bottle{
+   animation: sveving 15s infinite;
+   animation-timing-function: linear; 
+   transform: rotate(-250deg);
+   width: 9%;
+   left: 50%;
+   top: 70%;
+   opacity: 0.6;
+   
+}
+
+#can{
+   animation: sveving 15s infinite;
+   animation-timing-function: linear; 
+   transform: rotate(200deg);
+   width: 5%;
+   left: 40%;
+   top: 70%;
+   opacity: 0.7; 
+}
+            
+#oil{
+   animation: sveving 15s infinite;
+   animation-timing-function: linear; 
+   transform: rotate(10deg);
+   width: 13%;
+   left: 20%;
+   top: 70%;
+   opacity: 0.85;
+}
+  
+.plastics{
+   animation: sveving 15s infinite;
+   animation-timing-function: linear; 
+   transform: rotate(10deg);
+}
+
+
+.plastic-one{
+   width: 16%;
+   left: 60%;
+   top: 76%;
+   opacity: 0.6;
+}
+
+.plastic-two{
+   width: 13%;
+   left: 12%;
+   top: 80%;
+   opacity: 0.7;
+}
+
+.plastic-three{
+   width: 10%;
+   left: 10%;
+   top: 60%;
+   opacity: 0.5;
+}
+
+.plastic-four{
+   width: 10%;
+   left: 40%;
+   top: 82%;
+   opacity: 0.5;
+}
+
+#boat{
+  transform: rotate(90deg);
+   width: 60%;
+   left: 40%;
+   top: 35%;
+   opacity: 0.9;
+   
+}
+
+
+
+
+
+@keyframes sveving{
+    50%{   transform: scale(0.6); }
+}
+
+
+
+            
+                      
+button>label {
+    display:block;
+}
+button > label > img {
+    margin:1em;
+    cursor:grab;
+    position: absolute;
+}
+button>label {
+    text-align:center;
+    font-size:5vmin;
+   
+    
+}
+
+button{
+                background-color: transparent;
+                border: none;
+                
+            
+            }
+                
+            button:focus{
+                outline: none;
+            }
+
+/*animation for mystery tekst/smoke effekt*/
+
+section{
+height: 100vh;
+background: #000;
+width:100%;
+        
+}
+
+
+    #smokevideo{
+
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+        
+        
+    }
+    h1{
+        
+        margin:0;
+        padding: 0;
+        position: absolute;
+        top:20%;
+        transform:translateY(-60%);
+        width:100%;
+        text-align:center;
+        color:#ddd;
+        font-size:5em;
+        font-family:"Lato", sans-serif;
+        letter-spacing: 0.2em;
+            
+
+    }
+    
+    h1 span{
+        
+        opacity:0;
+        display: inline-block;
+        animation: animate 3s linear forwards;
+ 
+    }
+    @keyframes animate 
+    {
+    
+        0%{
+            opacity: 0;
+            transform: rotateY(90deg);
+            filter:blur(10px);
+            
+        }
+        100%{
+            opacity:1;
+            transform: rotateY(0deg);
+            filter:blur(0);
+        }
+        
+    
+    }    
+    h1 span:nth-child(1){
+        animation-delay: 1s; 
+    } 
+     h1 span:nth-child(2){
+        animation-delay: 2s; 
+    }
+      h1 span:nth-child(3){
+        animation-delay: 2.5s; 
+    }
+      h1 span:nth-child(4){
+        animation-delay: 3.5s; 
+    }
+      h1 span:nth-child(5){
+        animation-delay: 4.5s; 
+    }
+      h1 span:nth-child(6){
+        animation-delay:5s;
+    }
+
+      h1 span:nth-child(7){
+        animation-delay:5.5s;
+    }
+/*END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
