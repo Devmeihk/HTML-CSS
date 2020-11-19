@@ -355,10 +355,6 @@ p{
 }
 
 
-
-
-
-
 /*Elementer, fisk, oljetønner osv*/
 .oilcan{
     position: absolute;
@@ -982,53 +978,6 @@ section{
         background-position: center;   
     }
 }
-/*
-
-.atlantis {
-    background: url(../img/1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    
-    animation: slide-atlantis 10s infinite;
-    transform: scale(1)
-}
-
-
-@keyframes slide-atlantis {
-    0% {
-        background: url(../img/1.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    33% {
-        background: url(../img/2.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    50% {
-        background: url(../img/3.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    80% {
-        background: url(../img/4.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    100% {
-        background: url(../img/1.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-}
-*/
-
 
 
 .slidershow{
@@ -1174,43 +1123,7 @@ input[name="r"]{
     top: 10%;
     transform: translate(-50%, -50%);
 }
-/*.octopus {
-    background: url(../img/octopus1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: contain;
-    
-    animation: slide-kraken 6s infinite;
-    
-}
 
-
-@keyframes slide-kraken {
-    0% {
-        background: url(../img/octopus1.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    33% {
-        background: url(../img/kraken.jpeg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    66% {
-        background: url(../img/kraken-after.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    100% {
-        background: url(../img/octopus1.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;   
-    }
-}*/
 /*animation for mystery tekst/smoke effekt*/
 
 section{

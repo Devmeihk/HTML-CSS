@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pure Css remove image on button click</title>
+        <style>
+#grab-bag{
+    display:none;
+}
+#grab-bag:checked+button {
+    display:none;
+}
+            
+#grab-bottle{
+    display:none;
+}
+#grab-bottle:checked+button {
+    display:none;
+}
+            
+#grab-oil{
+    display:none;
+}
+#grab-oil:checked+button {
+    display:none;
+}
+            
+#grab-plastics1{
+    display:none;
+}
+#grab-plastics1:checked+button {
+    display:none;
+}
+            
+#grab-plastics2{
+    display:none;
+}
+#grab-plastics2:checked+button {
+    display:none;
+}
+            
+#grab-plastics3{
+    display:none;
+}
+#grab-plastics3:checked+button {
+    display:none;
+}
+            
+#grab-plastics4{
+    display:none;
+}
+            
+#grab-plastics4:checked+button {
+    display:none;
+}
+  
+
+            
+            
+            
+#bag{
+ animation: sveving 15s infinite;
+  animation-timing-function: linear;
+}
+            
+@keyframes sveving{
+    50%{   transform: scale(0.6); }
+}
+            
+#bottle{
+   animation: sveving 15s infinite;
+   animation-timing-function: linear; 
+}
+            
+#oil{
+   animation: sveving 15s infinite;
+   animation-timing-function: linear; 
+}
+            
+#plastics{
+   animation: sveving 15s infinite;
+   animation-timing-function: linear; 
+}
+
+
+
+            
+                      
+button>label {
+    display:block;
+}
+button > label > img {
+    width:300px;
+    margin:1em;
+    cursor:grab;
+}
+body, button>label {
+    text-align:center;
+    font-size:5vmin;
+   
+    
+}
+            
+            body{
+                 background: url(img/1.jpg);
+    background-repeat: no-repeat;
+            }
+            
+            button{
+                background-color: transparent;
+                border: none;
+                
+            
+            }
+                
+            button:focus{
+                outline: none;
+            }
+        </style>
+    </head>
+
+    
+    <body>
+        <input type="radio" id="grab-bag">
+        <button><label for="grab-bag"><img src="img/plasticBag1.png" id="bag"></label></button>
+        
+        
+        <input type="radio" id="grab-bottle">
+        <button><label for="grab-bottle"><img id="bottle"src="img/plasticBottle.png"></label></button>
+        
+        <input type="radio" id="grab-oil">
+        <button><label for="grab-oil"><img id="oil"src="img/oilCan.png"></label></button>
+        
+        <input type="radio" id="grab-plastics1">
+        <button><label for="grab-plastics1"><img id="plastics"src="img/poseidonPlastic.png"></label></button>
+        
+        <input type="radio" id="grab-plastics2">
+        <button><label for="grab-plastics2"><img id="plastics"src="img/poseidonPlastic.png"></label></button>
+        
+        <input type="radio" id="grab-plastics3">
+        <button><label for="grab-plastics3"><img id="plastics"src="img/poseidonPlastic.png"></label></button>
+        
+        <input type="radio" id="grab-plastics4">
+        <button><label for="grab-plastics4"><img id="plastics"src="img/poseidonPlastic.png"></label></button>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
